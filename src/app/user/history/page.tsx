@@ -120,7 +120,7 @@ export default function History() {
                   <TableCell className="py-3">₹{plan?.price}</TableCell>
                   <TableCell className="py-3">{plan?.destination}</TableCell>
                   <TableCell className="py-3">
-                    {format(new Date(plan?.startdate), "dd MMM yyyy")}
+                    {(plan?.startdate ? format(new Date(plan?.startdate), "dd MMM yyyy") : ""}
                   </TableCell>
                   <TableCell className="py-3">
                     <ChevronRight className="h-4 w-4 text-red-200" />
