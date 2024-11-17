@@ -8,7 +8,7 @@ export default async function sendEmail(data: any) {
 
   const sentFrom = new Sender(
     "subharthi@trial-v69oxl5r32rg785k.mlsender.net",
-    "Subharthi Hazra"
+    "Souvick Samanta"
   );
 
   const recipients = [new Recipient(data.email, data.name)];
