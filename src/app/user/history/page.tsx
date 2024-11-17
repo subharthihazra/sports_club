@@ -110,17 +110,17 @@ export default function History() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {planHistory.map((plan: any) => (
+              {planHistory.map((plan: any, i: any) => (
                 <TableRow
-                  key={plan.id}
+                  key={i}
                   className="cursor-pointer hover:bg-muted/50"
                   onClick={() => openDialog(plan)}
                 >
-                  <TableCell className="py-3">{plan.name}</TableCell>
-                  <TableCell className="py-3">₹{plan.price}</TableCell>
-                  <TableCell className="py-3">{plan.destination}</TableCell>
+                  <TableCell className="py-3">{plan?.name}</TableCell>
+                  <TableCell className="py-3">₹{plan?.price}</TableCell>
+                  <TableCell className="py-3">{plan?.destination}</TableCell>
                   <TableCell className="py-3">
-                    {format(new Date(plan.startdate), "dd MMM yyyy")}
+                    {format(new Date(plan?.startdate), "dd MMM yyyy")}
                   </TableCell>
                   <TableCell className="py-3">
                     <ChevronRight className="h-4 w-4 text-red-200" />
