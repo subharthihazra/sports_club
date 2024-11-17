@@ -21,7 +21,7 @@ export default async function sendEmail(data: any) {
     .setReplyTo(sentFrom)
     .setSubject("Purchase Success!")
     .setText(
-      `Hi, Purchase of Rs ${data.price} has been done for "${data.plan}", Wish you a great experience!`
+      `Hi, Purchase of Rs ${data.price} has been done for "${data.plan}" at our club, Have a great game!`
     );
 
   await mailerSend.email.send(emailParams);
