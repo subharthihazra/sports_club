@@ -151,11 +151,11 @@ export default function History() {
               </div>
               <div className="grid grid-cols-2 items-center gap-4">
                 <span className="font-medium">Start Date:</span>
-                <span>{format(new Date(selectedPlan?.startdate), "dd MMM yyyy")}</span>
+                <span>{selectedPlan?.startdate ? format(new Date(selectedPlan?.startdate), "dd MMM yyyy") : ""}</span>
               </div>
               <div className="grid grid-cols-2 items-center gap-4">
                 <span className="font-medium">End Date:</span>
-                <span>{format(new Date(selectedPlan?.enddate), "dd MMM yyyy")}</span>
+                <span>{selectedPlan?.enddate ? format(new Date(selectedPlan?.enddate), "dd MMM yyyy") : ""}</span>
               </div>
               <div className="grid grid-cols-2 items-center gap-4">
                 <span className="font-medium">Duration:</span>
