@@ -22,7 +22,7 @@ const planSchema = new Schema<IPlan>(
     destination: { type: String, required: true },
     duration: { type: String, required: true },
     description: { type: String },
-    deleted: { type: Boolean },
+    deleted: { type: Boolean, default: false },
   },
   { timestamps: true }
 );
